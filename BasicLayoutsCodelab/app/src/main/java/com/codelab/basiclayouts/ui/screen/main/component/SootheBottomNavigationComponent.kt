@@ -18,7 +18,7 @@ import com.codelab.basiclayouts.R
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 @Composable
-private fun SootheBottomNavigationComponent(modifier: Modifier = Modifier) {
+fun SootheBottomNavigationComponent(modifier: Modifier = Modifier) {
     NavigationBar(
         containerColor = MaterialTheme.colorScheme.surfaceVariant,
         modifier = modifier

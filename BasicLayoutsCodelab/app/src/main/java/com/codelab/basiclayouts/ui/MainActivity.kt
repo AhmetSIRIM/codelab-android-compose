@@ -31,12 +31,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// Step: MySoothe App - Scaffold
-@Composable
-fun MySootheAppPortrait() {
-    // Implement composable here
-}
-
 // Step: Bottom navigation - Material
 @Composable
 private fun SootheNavigationRail(modifier: Modifier = Modifier) {
@@ -59,12 +53,6 @@ fun MySootheApp() {
 @Composable
 fun NavigationRailPreview() {
     MySootheTheme { SootheNavigationRail() }
-}
-
-@Preview(widthDp = 360, heightDp = 640)
-@Composable
-fun MySoothePortraitPreview() {
-    MySootheAppPortrait()
 }
 
 @Preview(widthDp = 640, heightDp = 360)
