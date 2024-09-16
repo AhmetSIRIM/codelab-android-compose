@@ -1,11 +1,10 @@
-package com.codelab.basiclayouts.ui.component
+package com.codelab.basiclayouts.ui.screen.main.component
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -19,7 +18,6 @@ import androidx.compose.ui.unit.dp
 import com.codelab.basiclayouts.R
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchBarComponent(
     modifier: Modifier = Modifier,
