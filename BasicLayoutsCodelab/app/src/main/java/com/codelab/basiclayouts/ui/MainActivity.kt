@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.codelab.basiclayouts
+package com.codelab.basiclayouts.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -26,6 +26,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.codelab.basiclayouts.R
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 class MainActivity : ComponentActivity() {
@@ -33,14 +34,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent { MySootheApp() }
     }
-}
-
-// Step: Search bar - Modifiers
-@Composable
-fun SearchBar(
-    modifier: Modifier = Modifier
-) {
-    // Implement composable here
 }
 
 // Step: Align your body - Alignment
@@ -141,12 +134,6 @@ private data class DrawableStringPair(
     @DrawableRes val drawable: Int,
     @StringRes val text: Int
 )
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun SearchBarPreview() {
-    MySootheTheme { SearchBar(Modifier.padding(8.dp)) }
-}
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
 @Composable
