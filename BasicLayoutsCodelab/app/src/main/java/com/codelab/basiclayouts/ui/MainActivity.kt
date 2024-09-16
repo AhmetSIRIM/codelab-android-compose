@@ -24,7 +24,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.codelab.basiclayouts.R
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,14 +33,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
-// Step: Favorite collections grid - LazyGrid
-@Composable
-fun FavoriteCollectionsGrid(
-    modifier: Modifier = Modifier,
-) {
-    // Implement composable here
-}
 
 // Step: Home section - Slot APIs
 @Composable
@@ -85,21 +76,6 @@ fun MySootheAppLandscape() {
 @Composable
 fun MySootheApp() {
     // Implement composable here
-}
-
-private val favoriteCollectionsData = listOf(
-    R.drawable.fc1_short_mantras to R.string.fc1_short_mantras,
-    R.drawable.fc2_nature_meditations to R.string.fc2_nature_meditations,
-    R.drawable.fc3_stress_and_anxiety to R.string.fc3_stress_and_anxiety,
-    R.drawable.fc4_self_massage to R.string.fc4_self_massage,
-    R.drawable.fc5_overwhelmed to R.string.fc5_overwhelmed,
-    R.drawable.fc6_nightly_wind_down to R.string.fc6_nightly_wind_down
-).map { DrawableStringPair(it.first, it.second) }
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun FavoriteCollectionsGridPreview() {
-    MySootheTheme { FavoriteCollectionsGrid() }
 }
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
