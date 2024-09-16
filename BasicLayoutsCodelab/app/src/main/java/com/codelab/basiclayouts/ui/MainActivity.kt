@@ -19,11 +19,9 @@ package com.codelab.basiclayouts.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 class MainActivity : ComponentActivity() {
@@ -31,19 +29,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent { MySootheApp() }
     }
-}
-
-
-// Step: Home screen - Scrolling
-@Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
-    // Implement composable here
-}
-
-// Step: Bottom navigation - Material
-@Composable
-private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
-    // Implement composable here
 }
 
 // Step: MySoothe App - Scaffold
@@ -68,18 +53,6 @@ fun MySootheAppLandscape() {
 @Composable
 fun MySootheApp() {
     // Implement composable here
-}
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun ScreenContentPreview() {
-    MySootheTheme { HomeScreen() }
-}
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun BottomNavigationPreview() {
-    MySootheTheme { SootheBottomNavigation(Modifier.padding(top = 24.dp)) }
 }
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
