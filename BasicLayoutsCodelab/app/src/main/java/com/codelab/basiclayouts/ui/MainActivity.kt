@@ -20,9 +20,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,32 +28,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// Step: Bottom navigation - Material
-@Composable
-private fun SootheNavigationRail(modifier: Modifier = Modifier) {
-    // Implement composable here
-}
-
-// Step: Landscape Mode
-@Composable
-fun MySootheAppLandscape() {
-    // Implement composable here
-}
-
 // Step: MySoothe App
 @Composable
 fun MySootheApp() {
     // Implement composable here
-}
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun NavigationRailPreview() {
-    MySootheTheme { SootheNavigationRail() }
-}
-
-@Preview(widthDp = 640, heightDp = 360)
-@Composable
-fun MySootheLandscapePreview() {
-    MySootheAppLandscape()
 }
