@@ -19,8 +19,6 @@ package com.codelab.basiclayouts.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -36,18 +34,11 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// Step: Align your body row - Arrangements
-@Composable
-fun AlignYourBodyRow(
-    modifier: Modifier = Modifier
-) {
-    // Implement composable here
-}
 
 // Step: Favorite collections grid - LazyGrid
 @Composable
 fun FavoriteCollectionsGrid(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     // Implement composable here
 }
@@ -55,7 +46,7 @@ fun FavoriteCollectionsGrid(
 // Step: Home section - Slot APIs
 @Composable
 fun HomeSection(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     // Implement composable here
 }
@@ -86,7 +77,7 @@ private fun SootheNavigationRail(modifier: Modifier = Modifier) {
 
 // Step: Landscape Mode
 @Composable
-fun MySootheAppLandscape(){
+fun MySootheAppLandscape() {
     // Implement composable here
 }
 
@@ -95,15 +86,6 @@ fun MySootheAppLandscape(){
 fun MySootheApp() {
     // Implement composable here
 }
-
-private val alignYourBodyData = listOf(
-    R.drawable.ab1_inversions to R.string.ab1_inversions,
-    R.drawable.ab2_quick_yoga to R.string.ab2_quick_yoga,
-    R.drawable.ab3_stretching to R.string.ab3_stretching,
-    R.drawable.ab4_tabata to R.string.ab4_tabata,
-    R.drawable.ab5_hiit to R.string.ab5_hiit,
-    R.drawable.ab6_pre_natal_yoga to R.string.ab6_pre_natal_yoga
-).map { DrawableStringPair(it.first, it.second) }
 
 private val favoriteCollectionsData = listOf(
     R.drawable.fc1_short_mantras to R.string.fc1_short_mantras,
@@ -114,21 +96,10 @@ private val favoriteCollectionsData = listOf(
     R.drawable.fc6_nightly_wind_down to R.string.fc6_nightly_wind_down
 ).map { DrawableStringPair(it.first, it.second) }
 
-private data class DrawableStringPair(
-    @DrawableRes val drawable: Int,
-    @StringRes val text: Int
-)
-
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
 @Composable
 fun FavoriteCollectionsGridPreview() {
     MySootheTheme { FavoriteCollectionsGrid() }
-}
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun AlignYourBodyRowPreview() {
-    MySootheTheme { AlignYourBodyRow() }
 }
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
