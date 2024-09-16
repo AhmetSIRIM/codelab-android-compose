@@ -1,4 +1,4 @@
-package com.codelab.basiclayouts.ui.screen.main.component
+package com.codelab.basiclayouts.ui.screen.mysoothe.component
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues

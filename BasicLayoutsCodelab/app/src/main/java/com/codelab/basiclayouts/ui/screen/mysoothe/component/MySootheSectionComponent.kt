@@ -1,4 +1,4 @@
-package com.codelab.basiclayouts.ui.screen.main.component
+package com.codelab.basiclayouts.ui.screen.mysoothe.component
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Column

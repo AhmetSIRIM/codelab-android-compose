@@ -14,22 +14,34 @@
  * limitations under the License.
  */
 
-package com.codelab.basiclayouts.ui
+package com.codelab.basiclayouts
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.WindowSizeClass
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.Composable
+import com.codelab.basiclayouts.ui.screen.mysoothe.MySootheApplicationLandscape
+import com.codelab.basiclayouts.ui.screen.mysoothe.MySootheApplicationPortrait
 
+@OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { MySootheApp() }
+        setContent {
+            val windowSizeClass = calculateWindowSizeClass(this)
+            MySootheApp(windowSizeClass)
+        }
     }
 }
 
-// Step: MySoothe App
 @Composable
-fun MySootheApp() {
-    // Implement composable here
+fun MySootheApp(windowSize: WindowSizeClass) {
+    when (windowSize.widthSizeClass) {
+        WindowWidthSizeClass.Compact -> MySootheApplicationPortrait()
+        WindowWidthSizeClass.Expanded -> MySootheApplicationLandscape()
+    }
 }

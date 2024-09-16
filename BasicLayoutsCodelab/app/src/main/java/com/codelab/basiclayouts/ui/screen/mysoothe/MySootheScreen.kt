@@ -1,4 +1,4 @@
-package com.codelab.basiclayouts.ui.screen.main
+package com.codelab.basiclayouts.ui.screen.mysoothe
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -11,10 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.codelab.basiclayouts.R
-import com.codelab.basiclayouts.ui.screen.main.component.AlignYourBodyRowComponent
-import com.codelab.basiclayouts.ui.screen.main.component.FavoriteCollectionsGridComponent
-import com.codelab.basiclayouts.ui.screen.main.component.MySootheSectionComponent
-import com.codelab.basiclayouts.ui.screen.main.component.SearchBarComponent
+import com.codelab.basiclayouts.ui.screen.mysoothe.component.AlignYourBodyRowComponent
+import com.codelab.basiclayouts.ui.screen.mysoothe.component.FavoriteCollectionsGridComponent
+import com.codelab.basiclayouts.ui.screen.mysoothe.component.MySootheSectionComponent
+import com.codelab.basiclayouts.ui.screen.mysoothe.component.SearchBarComponent
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 @Composable
