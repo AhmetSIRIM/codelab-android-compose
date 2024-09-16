@@ -36,14 +36,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// Step: Favorite collection card - Material Surface
-@Composable
-fun FavoriteCollectionCard(
-    modifier: Modifier = Modifier
-) {
-    // Implement composable here
-}
-
 // Step: Align your body row - Arrangements
 @Composable
 fun AlignYourBodyRow(
@@ -126,16 +118,6 @@ private data class DrawableStringPair(
     @DrawableRes val drawable: Int,
     @StringRes val text: Int
 )
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun FavoriteCollectionCardPreview() {
-    MySootheTheme {
-        FavoriteCollectionCard(
-            modifier = Modifier.padding(8.dp)
-        )
-    }
-}
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
 @Composable
