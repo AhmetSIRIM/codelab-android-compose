@@ -7,14 +7,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.codelab.basiclayouts.ui.theme.MySootheTheme
 
 @Composable
-fun MainScreen(modifier: Modifier = Modifier) {
-    Text("TODO(\"MainScreen not yet implemented\")")
+fun MySootheScreen(modifier: Modifier = Modifier) {
+    Text("TODO(\"MySootheScreen not yet implemented\")")
 }
 
 @Preview(showBackground = true)
 @Composable
-fun MainScreenPreview() {
+fun MySootheScreenPreview() {
     MySootheTheme {
-        MainScreen()
+        MySootheScreen()
     }
 }

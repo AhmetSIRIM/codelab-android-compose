@@ -34,14 +34,6 @@ class MainActivity : ComponentActivity() {
 }
 
 
-// Step: Home section - Slot APIs
-@Composable
-fun HomeSection(
-    modifier: Modifier = Modifier,
-) {
-    // Implement composable here
-}
-
 // Step: Home screen - Scrolling
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
@@ -76,12 +68,6 @@ fun MySootheAppLandscape() {
 @Composable
 fun MySootheApp() {
     // Implement composable here
-}
-
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
-@Composable
-fun HomeSectionPreview() {
-    MySootheTheme { HomeSection() }
 }
 
 @Preview(showBackground = true, backgroundColor = 0xFFF5F0EE)
